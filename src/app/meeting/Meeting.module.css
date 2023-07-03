@@ -1,0 +1,20 @@
+.heading {
+    color: blue;
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.body {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input {
+    border: 1px #000 solid;
+}
+
+.button {
+    border: 1px #000 solid;
+    margin-left: 1%;
+}

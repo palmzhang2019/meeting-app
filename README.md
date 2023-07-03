@@ -1,34 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 案件向けてデモ
 
-## Getting Started
+#### これは作者が半日かけて完成させたデモです。作者のWebSocketとNext.jsのスキルを顧客に示すために作成されました。
 
-First, run the development server:
+#### 前端プロジェクトでは、yarnを使用して管理を行い、websocketコンポーネントをインストールするために最初にyarn add websocketを使用する必要があります。 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### 構成
+このデモはフロントエンドとバックエンドの2つの部分で構成されています。バックエンドではPythonのWebSocketのサードパーティライブラリを使用してWebSocketサービスを実装しています。
+フロントエンドではNext.jsを使用してページと会議室でのメッセージ送信機能を実装しています。
+ページのルーティングは独自に作成する必要はありません。Next.jsのルールに従って新しいページファイルを作成するだけです。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 会議の機能
+会議の機能はsrc/app/meeting/のパスにあり、その中にはpage.tsxファイルとcssファイルが含まれています。
+会議の機能はWebSocketを使用してサーバーにメッセージを送信し、サーバーから返されたデータを受け取り、最後にページ上に表示することができます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 効果は画像の通りです。
+![img_3.png](img_3.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![img_4.png](img_4.png)
